@@ -111,7 +111,7 @@ label input[type=checkbox]:checked + span::before {
 }
 
 .container .removing {
-    animation: entering .7s reverse infinite;
+    animation: entering .8s reverse infinite;
 }
 
 .editing {

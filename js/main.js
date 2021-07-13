@@ -87,6 +87,7 @@
         
         if (!input.value) {
             if (paragraph) {
+                paragraph.scrollIntoView({ behavior: 'smooth' })
                 paragraph.classList.add('removing')
                 paragraph.addEventListener('animationiteration', e => {
                     paragraph.remove()
