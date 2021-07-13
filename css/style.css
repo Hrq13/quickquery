@@ -21,8 +21,10 @@ h1 {
 }
 
 .queryArea {
-    display: inline-block;
-    margin: 20px 5px 5px;
+    display: block;
+    width: fit-content;
+
+    margin: 30px auto 5px;
     padding: 10px;
     color: #ddd;
 }
@@ -34,7 +36,7 @@ input[type=text] {
 label[for=case-insensitive] {
     display: block;
     font-size: .75em;
-    color: rgb(128, 128, 128);
+    color: rgb(200, 200, 200);
     margin: .5em 0;
 }
 
@@ -86,7 +88,7 @@ label input[type=checkbox]:checked + span::before {
     grid-auto-rows: 250px;
     row-gap: 10px;
     column-gap: 5px;
-    margin: 25px 0;
+    margin: 25px 5px;
 }
 
 @keyframes entering {
@@ -131,7 +133,7 @@ label input[type=checkbox]:checked + span::before {
     border-radius: 15px;
 }
 
-.outstand {
+.container .outstand {
     background-color: yellow;
 }
 
@@ -177,6 +179,7 @@ label input[type=checkbox]:checked + span::before {
     width: 45vw;
     padding-right: 20px;
     margin: 30px auto;
+    animation: entering .4s;
 }
 
 .edit-area span {
@@ -199,5 +202,29 @@ label input[type=checkbox]:checked + span::before {
     margin: 0;
     text-align: right;
     font-size: .85em;
-    color: rgb(128, 128, 128);
+    color: rgb(170, 169, 169);
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        width: 90vw;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 1em;
+    }
+    .edit-area {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .queryArea {
+        width: 83vw;
+    }
+    .edit-area {
+        width: 80vw;
+    }
 }
