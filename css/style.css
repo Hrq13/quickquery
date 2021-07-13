@@ -219,6 +219,9 @@ label input[type=checkbox]:checked + span::before {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1em;
     }
+    .queryArea {
+        margin-bottom: 1.5em;
+    }
     .edit-area {
         width: 60vw;
     }
