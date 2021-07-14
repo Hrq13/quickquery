@@ -76,7 +76,7 @@ label input[type=checkbox]:checked + span {
 label input[type=checkbox] + span::before {
     content: '';
     position: absolute;
-    top: 1.5px;
+    top: 1.9px;
     left: 1.5px;
     width: 35%;
     aspect-ratio: 1;
@@ -86,7 +86,7 @@ label input[type=checkbox] + span::before {
 }
 
 label input[type=checkbox]:checked + span::before {
-    left: calc(65% - 1px);
+    left: calc(65% - 1.5px);
     background-color: rgb(26, 157, 26);
 }
 
