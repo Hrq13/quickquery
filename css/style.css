@@ -1,8 +1,9 @@
 body {
     font-family: sans-serif;
     background-image: url(../images/wallpaper.jpeg);
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     scroll-behavior: smooth;
     margin: 0;
